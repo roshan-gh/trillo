@@ -21,6 +21,33 @@ html {
   color: #777;
   min-height: 100vh; }
 
+.btn-inline {
+  border: none;
+  color: #eb2f64;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  padding-bottom: 2px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn-inline:hover {
+    color: #333; }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -152,7 +179,47 @@ html {
 .gallery {
   display: flex; }
   .gallery__photo {
-    width: 100%; }
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f4f2f2; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    /*in the flexbox margin auto makes space
+         as much as possible without the item itself 
+         occupying the space */
+    margin-right: auto;
+    display: flex; }
+  .overview__icon-star, .overview__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: #eb2f64; }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; }
+  .overview__icon-location {
+    margin-right: 0.5rem; }
+  .overview__rating {
+    background-color: #eb2f64;
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch; }
+    .overview__rating-average {
+      font-size: 2.25rem;
+      font-weight: 300; }
+    .overview__rating-count {
+      font-size: 0.8rem;
+      text-transform: uppercase; }
 
 .container {
   max-width: 120rem;
@@ -165,7 +232,7 @@ html {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
   display: flex;
   justify-content: space-between;
   align-items: center; }
