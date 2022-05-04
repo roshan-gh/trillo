@@ -1,0 +1,23 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto; //centered the container
+    background-color: $--color-grey-light-1;
+    box-shadow: $--shadow-dark;
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem;
+    background-color: $--color-white;
+    border-bottom: $--color-grey-light-2;
+}
+
+.content {}
+
+.sidebar {
+    background-color: $--color-grey-dark-1;
+}
+
+.hotel-view {
+    background-color: $--color-white;
+}
