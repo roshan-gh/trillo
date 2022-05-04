@@ -57,6 +57,9 @@
         height: 2rem;
         width: 2rem;
         fill: $--color-grey-dark-3;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -98,11 +101,9 @@
         top: 1.5rem;
         right: 1.1rem;
     }
-    &__user {}
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
         margin-right: 2rem;
     }
-    &__user-name {}
 }
