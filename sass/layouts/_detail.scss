@@ -1,4 +1,5 @@
 .detail {
+    font-size: 1.4rem; //description and user-reviews both will inherit font size
     display: flex;
     padding: 4.5rem;
     background-color: $--color-grey-light-1;
@@ -6,7 +7,6 @@
 }
 
 .description {
-    font-size: 1.4rem;
     flex: 0 0 60%;
     background-color: $--color-white;
     margin-right: 4.5rem;
@@ -16,5 +16,7 @@
 
 .user-reviews {
     flex: 1;
-    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

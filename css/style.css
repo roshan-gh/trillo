@@ -31,8 +31,13 @@ html {
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: margin-left 0.2s; }
   .btn-inline:hover {
     color: #333; }
+    .btn-inline:hover span {
+      margin-left: 8px; }
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
@@ -152,7 +157,9 @@ html {
       margin-right: 0.7rem;
       background-color: #eb2f64;
       -webkit-mask-image: url(../img/chevron-right.svg);
-      -webkit-mask-size: cover; }
+      -webkit-mask-size: cover;
+      mask-image: url(../img/chevron-right.svg);
+      mask-size: cover; }
 
 .recommend {
   font-size: 1.3rem;
@@ -169,6 +176,50 @@ html {
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+
+.review {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
+  .review__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative; }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem; }
+  .review__user-box {
+    margin-right: auto; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: #999; }
+  .review__rating {
+    color: #ba265d;
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    line-height: 1;
+    color: #f4f2f2;
+    font-family: sans-serif;
+    font-size: 20rem;
+    z-index: 1; }
 
 .side-nav {
   font-size: 1.4rem;
@@ -217,13 +268,13 @@ html {
   padding: 2.5rem; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: #faf9f9;
   border-bottom: 1px solid #f4f2f2; }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   background-color: #fff;
   margin-right: 4.5rem;
@@ -232,7 +283,9 @@ html {
 
 .user-reviews {
   flex: 1;
-  background-color: greenyellow; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .gallery {
   display: flex; }
