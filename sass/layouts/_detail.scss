@@ -1,0 +1,20 @@
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: $--color-grey-light-1;
+    border-bottom: $--line;
+}
+
+.description {
+    font-size: 1.4rem;
+    flex: 0 0 60%;
+    background-color: $--color-white;
+    margin-right: 4.5rem;
+    padding: 3rem;
+    box-shadow: $--shadow-light;
+}
+
+.user-reviews {
+    flex: 1;
+    background-color: greenyellow;
+}

@@ -10,7 +10,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: $--color-white;
-    border-bottom: 1px solid $--color-grey-light-2;
+    border-bottom: $--line;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,5 +32,5 @@
     background-color: $--color-white;
     flex: 1;
     //for testing
-    height: 80rem;
+    // height: 80rem;
 }

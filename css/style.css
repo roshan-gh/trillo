@@ -130,6 +130,46 @@ html {
     border-radius: 50%;
     margin-right: 2rem; }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem; }
+    .list__item::before {
+      content: "";
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.7rem;
+      background-color: #eb2f64;
+      -webkit-mask-image: url(../img/chevron-right.svg);
+      -webkit-mask-size: cover; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #999;
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
+
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
@@ -176,6 +216,24 @@ html {
   text-align: center;
   padding: 2.5rem; }
 
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2; }
+
+.description {
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+  background-color: #fff;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6); }
+
+.user-reviews {
+  flex: 1;
+  background-color: greenyellow; }
+
 .gallery {
   display: flex; }
   .gallery__photo {
@@ -213,7 +271,11 @@ html {
     color: #fff;
     margin-left: 3rem;
     padding: 0 2.25rem;
-    align-self: stretch; }
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300; }
@@ -249,5 +311,4 @@ html {
 
 .hotel-view {
   background-color: #fff;
-  flex: 1;
-  height: 80rem; }
+  flex: 1; }
