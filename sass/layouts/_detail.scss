@@ -4,6 +4,9 @@
     padding: 4.5rem;
     background-color: $--color-grey-light-1;
     border-bottom: $--line;
+    @media only screen and (max-width: $-bp-medium) {
+        padding: 3rem;
+    }
 }
 
 .description {
@@ -12,6 +15,10 @@
     margin-right: 4.5rem;
     padding: 3rem;
     box-shadow: $--shadow-light;
+    @media only screen and (max-width: $-bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 }
 
 .user-reviews {

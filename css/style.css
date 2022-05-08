@@ -10,6 +10,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 * body {
   font-family: "Open Sans", sans-serif;
@@ -201,6 +204,8 @@ html {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -208,7 +213,7 @@ html {
     border-radius: 50%;
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: #fff;
@@ -217,6 +222,10 @@ html {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -257,6 +266,9 @@ html {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
@@ -267,10 +279,18 @@ html {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1;
+        margin: 0; } }
   .side-nav__item::before {
     content: "";
     display: block;
@@ -297,6 +317,10 @@ html {
     align-items: center;
     position: relative;
     z-index: 10; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -308,6 +332,9 @@ html {
   color: #ccc;
   text-align: center;
   padding: 2.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
 
 .detail {
   font-size: 1.4rem;
@@ -315,6 +342,9 @@ html {
   padding: 4.5rem;
   background-color: #faf9f9;
   border-bottom: 1px solid #f4f2f2; }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem; } }
 
 .description {
   flex: 0 0 60%;
@@ -322,6 +352,10 @@ html {
   margin-right: 4.5rem;
   padding: 3rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6); }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -384,6 +418,11 @@ html {
   background-color: #faf9f9;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      width: 100%;
+      max-width: 100%; } }
 
 .header {
   font-size: 1.4rem;
@@ -396,6 +435,9 @@ html {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: #333;

@@ -13,4 +13,7 @@ $--color-grey-dark-3: #999;
 $--shadow-dark: 0 2rem 6rem rgba($--color-black, 0.3);
 $--shadow-light: 0 2rem 5rem rgba($--color-black, 0.6);
 $--line: 1px solid $--color-grey-light-2;
-//Break Points for responsive design
+//Break-Points for responsive design
+$-bp-largest: 75em; // 1200/16
+$-bp-large: 68.75em; // 1100/16
+$-bp-medium: 56.25em; //900/16
