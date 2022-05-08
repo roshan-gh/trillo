@@ -429,6 +429,9 @@ html {
     font-size: 1.2rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__location {
+        padding: 0 1rem; } }
   .overview__icon-location {
     margin-right: 0.5rem; }
   .overview__rating {
@@ -444,6 +447,10 @@ html {
     @media only screen and (max-width: 37.5em) {
       .overview__rating {
         padding: 0 1.5rem; } }
+    @media only screen and (max-width: 23.4375em) {
+      .overview__rating {
+        padding: 0 1.5rem;
+        margin: 0; } }
     .overview__rating-average {
       font-size: 2.25rem;
       font-weight: 300; }

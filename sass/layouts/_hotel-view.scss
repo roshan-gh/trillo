@@ -45,6 +45,9 @@
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+        @media only screen and (max-width: $-bp-small) {
+            padding: 0 1rem;
+        }
     }
     &__icon-location {
         margin-right: 0.5rem;
@@ -61,6 +64,10 @@
         align-items: center;
         @media only screen and (max-width: $-bp-small) {
             padding: 0 1.5rem;
+        }
+        @media only screen and (max-width: $-bp-iphone-se) {
+            padding: 0 1.5rem;
+            margin: 0;
         }
         &-average {
             font-size: 2.25rem;
