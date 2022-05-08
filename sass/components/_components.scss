@@ -17,6 +17,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    //make the search bar at last position
+    @media only screen and (max-width: $-bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: $--color-grey-light-2;
+    }
     &__input {
         //input elements don't inherit global scope font families and should set it manually
         font-family: inherit;
@@ -129,6 +135,9 @@
     &__item {
         flex: 0 0 50%; //Each list item takes 50% of the width and it makes two columns
         margin-bottom: 0.7rem;
+        @media only screen and (max-width: $-bp-iphone-se) {
+            flex: 0 0 100%;
+        }
         &::before {
             content: "";
             display: inline-block;
